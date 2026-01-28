@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #89f7fe, #66a6ff);
+    min-height: 100vh;
+    transition: 0.5s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    color: white;
+}
+
+nav button {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 2s;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border: none;
+    background: black;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: black;
+    transform: scale(1.1);
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.card {
+    background: white;
+    padding: 40px;
+    width: 150px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-15px) rotate(3deg);
+    background: black;
+    color: white;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.3);
+    color: white;
+}
+
+/* Dark Mode */
+.dark {
+    background: #121212;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
